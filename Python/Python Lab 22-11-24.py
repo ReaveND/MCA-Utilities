@@ -49,13 +49,34 @@ print("The ASCII value of",d," is: ", ord(d))'''
 
 #Q6. Print a program to read a character in upper case and print it in lower case.
 
-a=input("Enter the character: ")
+'''a=input("Enter the character: ")
 print(a.upper())
-print(a.lower())
+print(a.lower())'''
 
 #Q7. Write a program to print x^y
 
-x,y=[int(c) for c in input("Enter the numbers: ").split()]
+'''a,b=[int(c) for c in input("Enter the numbers: ").split()]
+p=1
+for i in range(1,b+1):
+    p=p*a
+print("Value of x^y is: ",p)'''
 
-for i in range(b,b+1):
-    p
+#Q8. Write a python program to find whether a yr is leap yr or not.
+
+'''yr = int(input("Enter the year to check: "))
+if (yr % 400 == 0) and (yr % 100 == 0):
+    print("%d is a leap year"%yr)
+    
+elif (yr % 4 ==0) and (yr % 100 != 0):
+    print("%d is a leap year"%yr)
+
+else:
+    print("%d is not a leap year"%yr)'''
+
+#Q9. Write a python program to print whether a number is Even or Odd.
+
+a=int(input("Enter the number to check: "))
+if(a%2==0):
+    print("%d is an Even Number."%a)
+else:
+    print("%d is a Odd Number."%a)
