@@ -61,7 +61,7 @@ print(ls, end=" ")'''
 
 # WAP to take a word as input and check the occurence of each letter in the word.
 
-'''ls="kolkata"
+'''ls="RupakSarkar"
 for i in ls:
     c=0
     c=ls.count(i)
@@ -139,7 +139,7 @@ print(dt.items())  #Prints in pairs separately.'''
 for i in dt:
     print(dt[i]) #Prints with the values.'''
 
-st="kolkata"
+'''st="kolkata"
 frq={}
 for i in st:
     if i in frq:
@@ -147,9 +147,35 @@ for i in st:
     else:
         frq[i]=1
 
-print(frq)
-
+print(frq)'''
+'''
 #Q. WAP to find the highest frequency letters/characters.
 
 dt={'A':10, 'S':20, 'C':30}
-print(dt['A'])
+print(dt['A'])'''
+
+
+'''Q.1. st = input("Enter the word to check: ")
+freq = []
+for i in st:
+    for c in freq:
+        if c[0]==i:
+            c[1]+=1  
+            break
+    else:
+        freq.append([i,1])
+
+print("Letter frequencies:",freq)'''
+
+
+def selection_sort(array):  
+        length = len(array)  
+        for i in range(length-1):  
+            minIndex = i  
+            for j in range(i+1, length):  
+                if array[j]<array[minIndex]:  
+                    minIndex = j  
+            array[i], array[minIndex] = array[minIndex], array[i]  
+        return array      
+array = [72,4,10,38,2]  
+print("The sorted array is: ", selection_sort(array))
